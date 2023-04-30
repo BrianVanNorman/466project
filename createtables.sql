@@ -9,7 +9,7 @@ create table Song (
 );
 
 create table File (
-    ID int not null, FileVersion char(15), 
+    ID int not null, FileVersion char(20), 
     SongID int not null,
 
     primary key (ID, SongID),
@@ -26,7 +26,8 @@ create table User (
 
 create table Queue (
     ID int not null, UserID int not null, 
-    FileID int not null, Priority boolean, 
+    FileID int not null, Priority boolean,
+    Payment int not null, 
     Played boolean,
 
     primary key (ID, UserID, FileID),
