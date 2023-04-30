@@ -35,10 +35,10 @@ create table Queue (
 );
 
 create table Contribution (
-    ContributorID int not null, SongID int not null, 
+    ID int not null, ContributorID int not null, SongID int not null, 
     ContRole char(20),
 
-    primary key (ContributorID, SongID), 
+    primary key (ID), 
     foreign key (ContributorID) references Contributors(ID),
     foreign key (SongID) references Song(ID)
 );
