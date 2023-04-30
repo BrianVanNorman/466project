@@ -16,7 +16,7 @@ create table File (
     foreign key (SongID) references Song(ID)
 );
 
-create table Contributor (
+create table Contributors (
     ID int primary key, ContName char(30)
 );
 
