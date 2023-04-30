@@ -39,6 +39,6 @@ create table Contribution (
     ContRole char(20),
 
     primary key (ContributorID, SongID), 
-    foreign key (ContributorID) references Contributor(ID),
+    foreign key (ContributorID) references Contributors(ID),
     foreign key (SongID) references Song(ID)
 );
