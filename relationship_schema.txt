@@ -1,8 +1,0 @@
-Relationship Schema:
-
-Song(ID,Name,Artist)
-File(ID,Version,SongID†)
-Contributor(ID,Name)
-User(ID,Name)
-Queue(ID,UserID†,FileID†,Priority,Payment,Played)
-Contribution(ContributorID†,SongID†,Role)
