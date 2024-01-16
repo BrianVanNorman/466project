@@ -1,5 +1,7 @@
 # 466project
 
+Databases group project for NIU course CSCI 466
+
 466 Group Project
 
 Members: 
